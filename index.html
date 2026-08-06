@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibranet: Provedor de Internet em Itamarati, AM</title>
+    <meta name="description" content="Internet fibra óptica rápida e estável em Itamarati-AM. Planos sem burocracia, instalação grátis e suporte ágil. Assine a Fibranet agora!">
+    <meta name="keywords" content="Provedor de internet em Itamarati, Internet residencial Itamarati AM, Internet fibra Itamarati, Planos de internet Itamarati">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://fibranet.fun/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fibranet: Provedor de Internet em Itamarati, AM">
+    <meta property="og:description" content="Internet fibra óptica rápida e estável em Itamarati-AM. Planos sem burocracia, instalação grátis e suporte ágil. Assine a Fibranet agora!">
+    <meta property="og:image" content="https://fibranet.fun/assets/img/sobre.webp">
+    <meta property="og:url" content="https://fibranet.fun/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fibranet: Provedor de Internet em Itamarati, AM">
+    <meta name="twitter:description" content="Internet fibra óptica rápida e estável em Itamarati-AM. Planos sem burocracia, instalação grátis e suporte ágil. Assine a Fibranet agora!">
+    <meta name="twitter:image" content="https://fibranet.fun/assets/img/sobre.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#15f935', // Primária Neon
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        accent: {
+                            500: '#15f935',
+                            600: '#000000',
+                        },
+                        base: {
+                            bg: '#0a0a0a',
+                            text: '#f3f4f6',
+                            muted: '#9ca3af'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0px 10px 40px 0px rgba(0, 0, 0, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f3f4f6;
+        }
+
+        .glass-header {
+            background: rgba(10, 10, 10, 0.95); border-bottom: 1px solid #1f2937;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(22, 163, 74, 0.2) 100%);
+        }
+    </style>
+
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://fibranet.fun/#organization",
+        "name": "Fibranet",
+        "url": "https://fibranet.fun/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fibranet.fun/assets/img/logo.png"
+        },
+        "sameAs": [
+          "https://instagram.com/eletromix.ita"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "InternetServiceProvider",
+        "@id": "https://fibranet.fun/#localBusiness",
+        "name": "Fibranet - Provedor de Internet Residencial",
+        "image": "https://fibranet.fun/assets/img/sobre.webp",
+        "url": "https://fibranet.fun/",
+        "telephone": "+5592986347979",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Vitória Régia, 130 - Centro",
+          "addressLocality": "Itamarati",
+          "addressRegion": "AM",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.439826267577577,
+          "longitude": -68.24505942269037
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "11:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "13:00",
+            "closes": "18:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "07:00",
+            "closes": "11:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "13:00",
+            "closes": "17:00"
+          }
+        ],
+        "priceRange": "$",
+        "hasMap": "https://maps.google.com/maps?q=-6.439826267577577,-68.24505942269037",
+        "areaServed": "Itamarati - AM",
+        "parentOrganization": {
+          "@id": "https://fibranet.fun/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://fibranet.fun/#website",
+        "url": "https://fibranet.fun/",
+        "name": "Fibranet",
+        "publisher": {
+          "@id": "https://fibranet.fun/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://fibranet.fun/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qual é o valor da taxa de instalação?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nenhum! Na Fibranet, a instalação é 100% gratuita para todos os novos clientes em Itamarati."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o suporte técnico se a internet cair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Temos o suporte mais rápido da cidade. Basta mandar uma mensagem no nosso WhatsApp e nossa equipe técnica irá até você rapidamente para resolver o problema."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A internet da Fibranet tem limite de franquia de dados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Nossos planos são 100% ilimitados. Você pode assistir, jogar e navegar à vontade o mês inteiro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O roteador Wi-Fi já está incluso no plano?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Fornecemos um roteador Wi-Fi de alta qualidade em comodato durante todo o período da sua assinatura, sem custo adicional."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://fibranet.fun/#service-6",
+        "name": "Plano 6 Megas",
+        "description": "Por apenas R$ 69,99/mês. Ideal para o dia a dia.",
+        "provider": {
+          "@id": "https://fibranet.fun/#localBusiness"
+        },
+        "areaServed": "Itamarati - AM"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://fibranet.fun/#service-20",
+        "name": "Plano 20 Megas",
+        "description": "Por apenas R$ 99,99/mês. Excelente custo-benefício.",
+        "provider": {
+          "@id": "https://fibranet.fun/#localBusiness"
+        },
+        "areaServed": "Itamarati - AM"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://fibranet.fun/#service-30",
+        "name": "Plano 30 Megas",
+        "description": "Por apenas R$ 139,99/mês. Mais velocidade para sua casa.",
+        "provider": {
+          "@id": "https://fibranet.fun/#localBusiness"
+        },
+        "areaServed": "Itamarati - AM"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://fibranet.fun/#service-40",
+        "name": "Plano 40 Megas",
+        "description": "Por apenas R$ 179,99/mês. Ideal para toda a família conectada.",
+        "provider": {
+          "@id": "https://fibranet.fun/#localBusiness"
+        },
+        "areaServed": "Itamarati - AM"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://fibranet.fun/#service-50",
+        "name": "Plano 50 Megas",
+        "description": "Por apenas R$ 219,99/mês. Alta performance para vídeos e jogos.",
+        "provider": {
+          "@id": "https://fibranet.fun/#localBusiness"
+        },
+        "areaServed": "Itamarati - AM"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://fibranet.fun/#service-60",
+        "name": "Plano 60 Megas",
+        "description": "Por apenas R$ 249,99/mês. Máxima velocidade Fibranet.",
+        "provider": {
+          "@id": "https://fibranet.fun/#localBusiness"
+        },
+        "areaServed": "Itamarati - AM"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://fibranet.fun/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://fibranet.fun/"
+          }
+        ]
+      }
+    ]
+    </script>
+</head>
+
+<body class="antialiased relative">
+
+    <!-- Header & Nav -->
+    <header x-data="{ mobileMenuOpen: false, scrolled: false }"
+        @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
+        :class="scrolled ? 'glass-header shadow-md py-3' : 'bg-[#0f0f0f] py-4 md:py-6'"
+        class="fixed w-full top-0 z-50 transition-all duration-300 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#inicio" class="flex-shrink-0 flex items-center">
+                <!-- Logo -->
+                <img src="assets/img/logo.png" alt="Logotipo Fibranet Provedor de Internet em Itamarati" class="h-10 w-auto object-contain">
+                <span class="sr-only">Fibranet</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#inicio" class="text-gray-300 hover:text-brand-500 font-medium transition-colors">Início</a>
+                <a href="#sobre-nos" class="text-gray-300 hover:text-brand-500 font-medium transition-colors">Quem
+                    Somos</a>
+                <a href="#planos" class="text-gray-300 hover:text-brand-500 font-medium transition-colors">Planos</a>
+                <a href="#vantagens"
+                    class="text-gray-300 hover:text-brand-500 font-medium transition-colors">Vantagens</a>
+                <a href="#faq" class="text-gray-300 hover:text-brand-500 font-medium transition-colors">FAQ</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden md:flex">
+                <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                    class="bg-brand-500 hover:bg-brand-400 text-black px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Assinar Agora
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-gray-100 focus:outline-none p-2">
+                    <svg class="h-6 w-6" x-show="!mobileMenuOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg class="h-6 w-6" x-show="mobileMenuOpen" style="display:none;" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div x-show="mobileMenuOpen" x-transition
+            class="md:hidden bg-[#0f0f0f] border-b shadow-lg absolute w-full left-0 top-full" style="display:none;">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a @click="mobileMenuOpen = false" href="#inicio"
+                    class="block px-3 py-3 text-base font-medium text-gray-100 hover:bg-[#111111]/30 hover:text-brand-500 rounded-md">Início</a>
+                <a @click="mobileMenuOpen = false" href="#sobre-nos"
+                    class="block px-3 py-3 text-base font-medium text-gray-100 hover:bg-[#111111]/30 hover:text-brand-500 rounded-md">Quem
+                    Somos</a>
+                <a @click="mobileMenuOpen = false" href="#planos"
+                    class="block px-3 py-3 text-base font-medium text-gray-100 hover:bg-[#111111]/30 hover:text-brand-500 rounded-md">Planos</a>
+                <a @click="mobileMenuOpen = false" href="#vantagens"
+                    class="block px-3 py-3 text-base font-medium text-gray-100 hover:bg-[#111111]/30 hover:text-brand-500 rounded-md">Vantagens</a>
+                <a @click="mobileMenuOpen = false" href="#faq"
+                    class="block px-3 py-3 text-base font-medium text-gray-100 hover:bg-[#111111]/30 hover:text-brand-500 rounded-md">FAQ</a>
+                <div class="pt-4 pb-2">
+                    <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-600 hover:bg-brand-700">
+                        Assinar pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (#inicio) -->
+        <section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-cover bg-center"
+            style="background-image: url('assets/img/hero-bg.webp');">
+            <!-- Fallback background se não carregar a imagem -->
+            <div class="absolute inset-0 hero-overlay"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+                <div class="lg:w-2/3">
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Provedor de Internet em Itamarati - AM: Conexão Rápida e Estável
+                    </h1>
+                    <p class="mt-4 text-xl sm:text-2xl text-gray-400 max-w-3xl mb-8">
+                        Cansado de internet que cai toda hora? A Fibranet oferece internet residencial de alta qualidade
+                        para você navegar, trabalhar e jogar sem travamentos. Planos acessíveis com instalação rápida em
+                        toda a cidade.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                        <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                            class="w-full sm:w-auto text-center bg-brand-500 hover:bg-brand-400 text-black px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Assinar pelo WhatsApp
+                        </a>
+                        <a href="#planos"
+                            class="w-full sm:w-auto text-center bg-[#0f0f0f] text-brand-400 hover:bg-gray-800 px-8 py-4 rounded-full font-bold text-lg transition-all border border-gray-800">
+                            Ver planos disponíveis
+                        </a>
+                    </div>
+                    <p class="mt-6 text-sm text-gray-400 font-medium">
+                        ✓ Atendimento humanizado, sem robôs e sem burocracia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Barra de Credibilidade (#credibilidade) -->
+        <section id="credibilidade" class="bg-[#0f0f0f] border-b border-gray-800 relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-10 relative">
+                <div class="bg-[#0f0f0f] rounded-2xl shadow-card p-6 md:p-8 flex flex-wrap justify-center gap-6 md:gap-12">
+                    <div class="flex items-center gap-3">
+                        <div class="text-brand-500 p-2 bg-[#111111]/30 rounded-lg">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-gray-100">Mais de 396 clientes ativos e satisfeitos.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-brand-500 p-2 bg-[#111111]/30 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-gray-100">Instalação e manutenção 100% gratuitas.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-brand-500 p-2 bg-[#111111]/30 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-gray-100">Atendimento e suporte mais rápidos da cidade.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-brand-500 p-2 bg-[#111111]/30 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-gray-100">Cobertura em toda a cidade de Itamarati, AM.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Seção "Quem Somos" (#sobre-nos) -->
+        <section id="sobre-nos" class="py-20 lg:py-28 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div class="mb-12 lg:mb-0">
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-100 tracking-tight mb-6">
+                            Conheça a Fibranet: Mais de 396 Clientes Conectados
+                        </h2>
+                        <div class="space-y-6 text-lg text-gray-400">
+                            <p>
+                                A Fibranet nasceu para transformar a forma como Itamarati se conecta ao mundo. Sabemos
+                                que uma internet rápida e estável não é mais luxo, é uma necessidade para o dia a dia.
+                                Por isso, entregamos uma conexão de alta performance, perfeita para estudar, trabalhar e
+                                se divertir sem interrupções.
+                            </p>
+                            <p>
+                                Nosso foco é ser o provedor de internet centro Itamarati e bairros que entrega
+                                exatamente o que promete: velocidade de verdade e um suporte técnico que resolve tudo de
+                                forma ágil, sem deixar você esperando na linha.
+                            </p>
+                        </div>
+                        <div class="mt-10">
+                            <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center text-center bg-brand-500 hover:bg-brand-400 text-black px-8 py-3.5 rounded-full font-bold text-lg transition-all shadow-md hover:shadow-lg">
+                                Falar com nossa equipe
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="assets/img/sobre.webp" alt="Equipe técnica da Fibranet e infraestrutura de rede fibra óptica em Itamarati AM"
+                            class="rounded-2xl shadow-card w-full object-cover aspect-[4/3]" loading="lazy">
+                        <div class="absolute -bottom-6 -left-6 bg-[#0f0f0f] p-6 rounded-2xl shadow-card">
+                            <p class="text-4xl font-extrabold text-brand-500">+396</p>
+                            <p class="text-sm font-semibold text-gray-400 mt-1 uppercase tracking-wide">Clientes
+                                Ativos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Seção de Serviços (#planos) -->
+        <section id="planos" class="py-20 lg:py-28 bg-[#0f0f0f] border-y border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-100 tracking-tight mb-4">
+                        Nossos Planos de Internet em Itamarati
+                    </h2>
+                    <p class="text-lg text-gray-400">
+                        Todos os nossos planos incluem Wi-Fi, instalação rápida e suporte direto. Escolha a velocidade
+                        ideal para sua casa!
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Plano 6 Megas -->
+                    <div
+                        class="bg-[#111111] rounded-2xl p-8 border border-gray-800 hover:border-brand-300 hover:shadow-card transition-all duration-300 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Plano 6 Megas</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-brand-500">R$ 69,99</span>
+                            <span class="text-gray-400 font-medium">/mês</span>
+                        </div>
+                        <p class="text-gray-400 mb-8 flex-grow">
+                            Ideal para o dia a dia, acesso a redes sociais e troca de mensagens.
+                        </p>
+                        <a href="https://wa.me/5592986347979?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20Plano%206%20Megas!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full block text-center bg-[#111111]/30 hover:bg-brand-600 hover:text-white text-brand-400 font-bold py-3 rounded-xl transition-colors border border-brand-200 hover:border-brand-600">
+                            Contratar 6 Megas
+                        </a>
+                    </div>
+
+                    <!-- Plano 20 Megas -->
+                    <div
+                        class="bg-[#111111] rounded-2xl p-8 border border-gray-800 hover:border-brand-300 hover:shadow-card transition-all duration-300 flex flex-col relative overflow-hidden">
+                        <!-- Badge Destaque -->
+                        <div
+                            class="absolute top-0 right-0 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                            Mais Popular</div>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Plano 20 Megas</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-brand-500">R$ 99,99</span>
+                            <span class="text-gray-400 font-medium">/mês</span>
+                        </div>
+                        <p class="text-gray-400 mb-8 flex-grow">
+                            Excelente custo-benefício para garantir a conexão da sua casa.
+                        </p>
+                        <a href="https://wa.me/5592986347979?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20Plano%2020%20Megas!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full block text-center bg-brand-500 hover:bg-brand-400 text-black font-bold py-3 rounded-xl transition-colors shadow-md hover:shadow-lg">
+                            Contratar 20 Megas
+                        </a>
+                    </div>
+
+                    <!-- Plano 30 Megas -->
+                    <div
+                        class="bg-[#111111] rounded-2xl p-8 border border-gray-800 hover:border-brand-300 hover:shadow-card transition-all duration-300 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Plano 30 Megas</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-brand-500">R$ 139,99</span>
+                            <span class="text-gray-400 font-medium">/mês</span>
+                        </div>
+                        <p class="text-gray-400 mb-8 flex-grow">
+                            Mais velocidade para sua casa, garantindo navegação fluida.
+                        </p>
+                        <a href="https://wa.me/5592986347979?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20Plano%2030%20Megas!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full block text-center bg-[#111111]/30 hover:bg-brand-600 hover:text-white text-brand-400 font-bold py-3 rounded-xl transition-colors border border-brand-200 hover:border-brand-600">
+                            Contratar 30 Megas
+                        </a>
+                    </div>
+
+                    <!-- Plano 40 Megas -->
+                    <div
+                        class="bg-[#111111] rounded-2xl p-8 border border-gray-800 hover:border-brand-300 hover:shadow-card transition-all duration-300 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Plano 40 Megas</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-brand-500">R$ 179,99</span>
+                            <span class="text-gray-400 font-medium">/mês</span>
+                        </div>
+                        <p class="text-gray-400 mb-8 flex-grow">
+                            Ideal para toda a família conectada ao mesmo tempo.
+                        </p>
+                        <a href="https://wa.me/5592986347979?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20Plano%2040%20Megas!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full block text-center bg-[#111111]/30 hover:bg-brand-600 hover:text-white text-brand-400 font-bold py-3 rounded-xl transition-colors border border-brand-200 hover:border-brand-600">
+                            Contratar 40 Megas
+                        </a>
+                    </div>
+
+                    <!-- Plano 50 Megas -->
+                    <div
+                        class="bg-[#111111] rounded-2xl p-8 border border-gray-800 hover:border-brand-300 hover:shadow-card transition-all duration-300 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Plano 50 Megas</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-brand-500">R$ 219,99</span>
+                            <span class="text-gray-400 font-medium">/mês</span>
+                        </div>
+                        <p class="text-gray-400 mb-8 flex-grow">
+                            Alta performance para vídeos, filmes e jogos online.
+                        </p>
+                        <a href="https://wa.me/5592986347979?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20Plano%2050%20Megas!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full block text-center bg-[#111111]/30 hover:bg-brand-600 hover:text-white text-brand-400 font-bold py-3 rounded-xl transition-colors border border-brand-200 hover:border-brand-600">
+                            Contratar 50 Megas
+                        </a>
+                    </div>
+
+                    <!-- Plano 60 Megas -->
+                    <div
+                        class="bg-[#111111] rounded-2xl p-8 border border-brand-500 shadow-card flex flex-col text-white">
+                        <h3 class="text-2xl font-bold mb-2">Plano 60 Megas</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-brand-500">R$ 249,99</span>
+                            <span class="text-gray-400 font-medium">/mês</span>
+                        </div>
+                        <p class="text-gray-400 mb-8 flex-grow">
+                            Máxima velocidade Fibranet para os usuários mais exigentes.
+                        </p>
+                        <a href="https://wa.me/5592986347979?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20Plano%2060%20Megas!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full block text-center bg-brand-500 hover:bg-brand-400 text-black font-bold py-3 rounded-xl transition-colors shadow-md">
+                            Contratar 60 Megas
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center text-center bg-brand-500 hover:bg-brand-400 text-black px-10 py-4 rounded-full font-bold text-xl transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Chamar no WhatsApp
+                        <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.01 2.011A10 10 0 0 0 2 12.012c0 1.777.466 3.498 1.348 5.01L2 22l5.127-1.34A9.957 9.957 0 0 0 12.01 22a10 10 0 0 0 0-19.989zM17.15 15.65c-.219.619-1.282 1.201-1.782 1.246-.437.04-1.002.133-3.238-.795-2.697-1.121-4.42-3.861-4.553-4.04-.132-.178-1.086-1.446-1.086-2.76 0-1.312.684-1.956.927-2.223.242-.266.527-.333.704-.333.176 0 .351-.004.505.004.162.007.38-.063.593.454.223.539.734 1.796.8 1.93.065.132.11.287.022.464-.088.177-.132.288-.264.443-.131.155-.281.334-.397.465-.131.154-.27.322-.119.582.152.261.677 1.118 1.455 1.81.107.095.836.816 1.766 1.196.262.108.416.088.572-.089.155-.176.666-.777.842-1.042.176-.265.352-.22.593-.132.242.088 1.53.722 1.795.855.264.133.44.199.505.31.066.111.066.643-.153 1.262z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Seção de Benefícios (#vantagens) -->
+        <section id="vantagens" class="py-20 lg:py-28 bg-[#111111]/30 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-100 tracking-tight">
+                        Por que a Fibranet é a Melhor Internet Residencial de Itamarati?
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <div
+                        class="bg-[#0f0f0f] p-8 rounded-2xl shadow-card border border-brand-100 flex items-start gap-5 transition-transform hover:-translate-y-1 duration-300">
+                        <div class="bg-[#111111]/50 text-brand-500 p-3 rounded-xl flex-shrink-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-100 mb-3">Instalação e Manutenção Gratuitas</h3>
+                            <p class="text-gray-400 leading-relaxed">Você não paga nenhuma taxa extra para começar a
+                                usar nossa internet banda larga ou para acionar o suporte técnico.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[#0f0f0f] p-8 rounded-2xl shadow-card border border-brand-100 flex items-start gap-5 transition-transform hover:-translate-y-1 duration-300">
+                        <div class="bg-[#111111]/50 text-brand-500 p-3 rounded-xl flex-shrink-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-100 mb-3">Mudança de Endereço sem Custo</h3>
+                            <p class="text-gray-400 leading-relaxed">Vai mudar de casa dentro de Itamarati? Nós
+                                transferimos o seu ponto de internet sem cobrar absolutamente nada por isso.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[#0f0f0f] p-8 rounded-2xl shadow-card border border-brand-100 flex items-start gap-5 transition-transform hover:-translate-y-1 duration-300">
+                        <div class="bg-[#111111]/50 text-brand-500 p-3 rounded-xl flex-shrink-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-100 mb-3">Atendimento e Instalação Mais Rápidos da
+                                Cidade</h3>
+                            <p class="text-gray-400 leading-relaxed">Sem burocracia e sem esperas intermináveis.
+                                Agendamos sua instalação de forma rápida e nosso suporte responde prontamente.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[#0f0f0f] p-8 rounded-2xl shadow-card border border-brand-100 flex items-start gap-5 transition-transform hover:-translate-y-1 duration-300">
+                        <div class="bg-[#111111]/50 text-brand-500 p-3 rounded-xl flex-shrink-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-100 mb-3">Conexão Estável para o Dia a Dia</h3>
+                            <p class="text-gray-400 leading-relaxed">Nossa estrutura garante estabilidade para você
+                                assistir seus filmes, séries e jogar online sem dores de cabeça.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="#planos"
+                        class="inline-flex text-brand-500 font-bold hover:text-brand-800 transition-colors border-b-2 border-brand-600 hover:border-brand-800 pb-1">
+                        Ver planos disponíveis
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Como Funciona (#como-funciona) -->
+        <section id="como-funciona" class="py-20 lg:py-28 bg-[#0f0f0f] border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-100 tracking-tight">
+                        Como ter a internet da Fibranet na sua casa
+                    </h2>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    <!-- Conector visual para desktop -->
+                    <div class="hidden lg:block absolute top-12 left-24 right-24 h-0.5 bg-[#111111]/50 z-0"></div>
+
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="w-24 h-24 mx-auto bg-[#111111]/30 rounded-full flex items-center justify-center text-brand-500 font-black text-3xl mb-6 shadow-md border-4 border-white group-hover:scale-110 transition-transform duration-300">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-100 mb-3">Escolha seu plano</h3>
+                        <p class="text-gray-400">Analise nossas opções de velocidade e escolha aquela que melhor
+                            atende à rotina da sua família.</p>
+                    </div>
+
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="w-24 h-24 mx-auto bg-[#111111]/30 rounded-full flex items-center justify-center text-brand-500 font-black text-3xl mb-6 shadow-md border-4 border-white group-hover:scale-110 transition-transform duration-300">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-100 mb-3">Chame no WhatsApp</h3>
+                        <p class="text-gray-400">Clique em qualquer botão desta página para falar diretamente com
+                            nosso atendimento.</p>
+                    </div>
+
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="w-24 h-24 mx-auto bg-[#111111]/30 rounded-full flex items-center justify-center text-brand-500 font-black text-3xl mb-6 shadow-md border-4 border-white group-hover:scale-110 transition-transform duration-300">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-100 mb-3">Agende a instalação gratuita</h3>
+                        <p class="text-gray-400">Nossa equipe técnica agenda a visita rapidamente, sem cobrar nenhuma
+                            taxa de adesão.</p>
+                    </div>
+
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="w-24 h-24 mx-auto bg-brand-600 rounded-full flex items-center justify-center text-white font-black text-3xl mb-6 shadow-card border-4 border-white group-hover:scale-110 transition-transform duration-300">
+                            4
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-100 mb-3">Comece a navegar</h3>
+                        <p class="text-gray-400">Pronto! Em pouco tempo você já estará aproveitando uma conexão
+                            estável e de alta qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Prova Social (#depoimentos) -->
+        <section id="depoimentos" class="py-20 lg:py-28 bg-[#111111] text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                        O que dizem sobre nossa internet banda larga
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-brand-800 p-8 rounded-2xl border border-brand-500 relative">
+                        <div class="text-brand-500 mb-6">
+                            <svg class="w-10 h-10 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                        </div>
+                        <p class="text-lg leading-relaxed text-brand-50 italic">
+                            "O que mais orgulha nossa equipe é o constante feedback positivo sobre a estabilidade da
+                            nossa conexão. Nossos clientes conseguem assistir a vídeos em alta resolução e jogar online
+                            nos finais de semana sem quedas."
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-800 p-8 rounded-2xl border border-brand-500 relative mt-4 md:mt-0">
+                        <div class="text-brand-500 mb-6">
+                            <svg class="w-10 h-10 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                        </div>
+                        <p class="text-lg leading-relaxed text-brand-50 italic">
+                            "Recebemos diariamente mensagens elogiando nosso suporte técnico. Quando um cliente precisa
+                            de ajuda, nossa equipe vai até o local e resolve rapidamente, honrando nosso compromisso de
+                            agilidade."
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-800 p-8 rounded-2xl border border-brand-500 relative mt-4 md:mt-0">
+                        <div class="text-brand-500 mb-6">
+                            <svg class="w-10 h-10 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                        </div>
+                        <p class="text-lg leading-relaxed text-brand-50 italic">
+                            "Com mais de 396 clientes satisfeitos em Itamarati, consolidamos a Fibranet como uma escolha
+                            segura para quem busca assinar internet de qualidade, sem taxas escondidas e com atendimento
+                            humano."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Bloco SEO Local / Área de Atuação (#area-atuacao) -->
+        <section id="area-atuacao" class="py-20 lg:py-28 bg-[#0f0f0f]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="mb-12 lg:mb-0">
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-100 tracking-tight mb-6">
+                            Provedor de internet Centro Itamarati e Toda a Região
+                        </h2>
+                        <p class="text-lg text-gray-400 mb-8 leading-relaxed">
+                            A Fibranet tem o orgulho de oferecer cobertura para toda a cidade de Itamarati, no Amazonas.
+                            Se você busca internet barata Itamarati e bairros próximos com excelente custo-benefício,
+                            nossa equipe está pronta para levar velocidade e estabilidade até a sua casa. Atendemos
+                            todos os bairros da cidade com a mesma agilidade.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-500 mt-1 mr-4 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <strong class="block text-gray-100">Endereço:</strong>
+                                    <span class="text-gray-400">R. Vitória Régia, 130 - Centro, Itamarati - AM</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-500 mt-1 mr-4 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <strong class="block text-gray-100">Horário de Atendimento:</strong>
+                                    <span class="text-gray-400">Segunda a Sexta, das 08h às 18h | Sábados, das 08h às
+                                        12h</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-500 mt-1 mr-4 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.01 2.011A10 10 0 0 0 2 12.012c0 1.777.466 3.498 1.348 5.01L2 22l5.127-1.34A9.957 9.957 0 0 0 12.01 22a10 10 0 0 0 0-19.989zM17.15 15.65c-.219.619-1.282 1.201-1.782 1.246-.437.04-1.002.133-3.238-.795-2.697-1.121-4.42-3.861-4.553-4.04-.132-.178-1.086-1.446-1.086-2.76 0-1.312.684-1.956.927-2.223.242-.266.527-.333.704-.333.176 0 .351-.004.505.004.162.007.38-.063.593.454.223.539.734 1.796.8 1.93.065.132.11.287.022.464-.088.177-.132.288-.264.443-.131.155-.281.334-.397.465-.131.154-.27.322-.119.582.152.261.677 1.118 1.455 1.81.107.095.836.816 1.766 1.196.262.108.416.088.572-.089.155-.176.666-.777.842-1.042.176-.265.352-.22.593-.132.242.088 1.53.722 1.795.855.264.133.44.199.505.31.066.111.066.643-.153 1.262z" />
+                                </svg>
+                                <div>
+                                    <strong class="block text-gray-100">WhatsApp:</strong>
+                                    <span class="text-gray-400">(92) 98634-7979</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iframe Google Maps Placeholder -->
+                    <div
+                        class="h-[400px] w-full rounded-2xl overflow-hidden shadow-card border border-gray-800 bg-gray-200">
+                        <!-- Substituir pela tag <iframe> do Google Maps da empresa -->
+                        <iframe src="https://maps.google.com/maps?q=-6.439826267577577,-68.24505942269037&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ Estratégico (#faq) -->
+        <section id="faq" class="py-20 lg:py-28 bg-[#111111]/30 border-t border-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-100 tracking-tight">
+                        Dúvidas Frequentes sobre Nossa Internet Banda Larga
+                    </h2>
+                </div>
+
+                <div class="space-y-4" x-data="{ active: null }">
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 1 ? null : 1"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>Qual é o melhor provedor de internet em Itamarati, AM?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 1 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 1" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            A Fibranet se destaca por oferecer grande estabilidade, velocidade real e ser uma internet
+                            sem taxa de instalação. O alto índice de satisfação dos nossos mais de 396 clientes reforça
+                            nosso compromisso.
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 2 ? null : 2"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>Quanto custa um plano de internet residencial em Itamarati?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 2 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 2" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            Temos opções para todos os bolsos. Nossos valores começam em R$ 69,99/mês (Plano de 6 Megas)
+                            e vão até R$ 249,99/mês (Plano de 60 Megas).
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 3 ? null : 3"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>A Fibranet cobra taxa de instalação ou de manutenção?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 3 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 3" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            Não! Na Fibranet, tanto a instalação quanto a manutenção e a mudança de endereço (dentro da
+                            cidade) são totalmente gratuitas.
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 4 ? null : 4"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>Quais bairros a Fibranet atende em Itamarati?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 4 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 4" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            Nossa área de atuação cobre toda a cidade de Itamarati, AM. Onde você estiver no município,
+                            levamos a conexão até você.
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 5 ? null : 5"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>Como faço para assinar um plano de internet na Fibranet?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 5 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 5" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            É muito simples. Basta clicar no botão do WhatsApp aqui no site, escolher o seu plano e
+                            falar diretamente com nosso atendimento para aprovar e agendar.
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 6 ? null : 6"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>Quanto tempo demora a instalação da internet após a contratação?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 6 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 6" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            Nosso grande diferencial é a rapidez extrema no atendimento e instalação. Assim que
+                            combinado no WhatsApp, agendamos o serviço com prioridade.
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 7 ? null : 7"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>A internet da Fibranet é boa para jogar online e assistir vídeos?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 7 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 7" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            Sim. Nossos planos, especialmente a partir de 30 Megas, são a internet para jogos e vídeos
+                            Itamarati ideal, oferecendo ótimo desempenho e baixa latência.
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f0f0f] rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                        <button @click="active = active === 8 ? null : 8"
+                            class="w-full text-left px-6 py-5 font-bold text-lg text-gray-100 flex justify-between items-center focus:outline-none focus:bg-gray-800 transition-colors">
+                            <h3>Onde fica a loja física da Fibranet em Itamarati?</h3>
+                            <svg class="w-6 h-6 transform transition-transform text-brand-500"
+                                :class="active === 8 ? 'rotate-180' : ''" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="active === 8" x-collapse style="display: none;" class="px-6 pb-6 text-gray-400">
+                            Nossa sede fica na R. Vitória Régia, 130 - Centro, Itamarati - AM. Você é bem-vindo para nos
+                            visitar, ou pode resolver tudo de forma prática pelo WhatsApp.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex text-brand-500 font-bold hover:text-brand-800 transition-colors border-b-2 border-brand-600 hover:border-brand-800 pb-1">
+                        Ainda tem dúvidas? Fale com nosso suporte
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CTA Final / Contato (#contato) -->
+        <section id="contato" class="py-20 lg:py-28 bg-[#111111]/50 border-t border-brand-800 text-white relative">
+            <div class="absolute inset-0 bg-brand-500 opacity-10"
+                style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
+                    Atendimento Fibranet e Localização no Centro de Itamarati
+                </h2>
+                <p class="text-xl text-gray-400 mb-10">
+                    Não passe mais raiva com conexões lentas. Chame nossa equipe agora mesmo e garanta sua instalação
+                    gratuita ainda esta semana.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+                    <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+                        class="w-full sm:w-auto text-center bg-[#0f0f0f] text-brand-400 hover:bg-gray-800 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Assinar pelo WhatsApp
+                    </a>
+                    <a href="tel:092986347979"
+                        class="w-full sm:w-auto text-center bg-transparent border-2 border-brand-200 hover:border-white text-white px-8 py-3.5 rounded-full font-bold text-lg transition-all">
+                        Ligar para a Fibranet
+                    </a>
+                </div>
+
+                <div class="text-gray-400 text-sm md:text-base space-y-2">
+                    <p class="font-medium">Respondemos rapidamente durante nosso horário comercial.</p>
+                    <p>R. Vitória Régia, 130 - Centro, Itamarati - AM | WhatsApp: (92) 98634-7979</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="bg-[#050505] text-gray-300 border-t border-gray-800 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
+
+                <!-- Logo & Info -->
+                <div class="space-y-6">
+                    <a href="#inicio" class="inline-block">
+                        <!-- Logo -->
+                        <img src="assets/img/logo.png" alt="Logotipo Fibranet Provedor de Internet em Itamarati" class="h-10 w-auto">
+                    </a>
+                    <p class="text-sm text-gray-400">
+                        Provedor de internet residencial de alta qualidade, rápida e estável em Itamarati, AM.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/eletromix.ita" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navegação -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Navegação Rápida</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="#vantagens" class="hover:text-white transition-colors">Vantagens</a></li>
+                        <li><a href="#planos" class="hover:text-white transition-colors">Planos</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#contato" class="hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contato</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 mr-2 text-brand-500 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12.01 2.011A10 10 0 0 0 2 12.012c0 1.777.466 3.498 1.348 5.01L2 22l5.127-1.34A9.957 9.957 0 0 0 12.01 22a10 10 0 0 0 0-19.989zM17.15 15.65c-.219.619-1.282 1.201-1.782 1.246-.437.04-1.002.133-3.238-.795-2.697-1.121-4.42-3.861-4.553-4.04-.132-.178-1.086-1.446-1.086-2.76 0-1.312.684-1.956.927-2.223.242-.266.527-.333.704-.333.176 0 .351-.004.505.004.162.007.38-.063.593.454.223.539.734 1.796.8 1.93.065.132.11.287.022.464-.088.177-.132.288-.264.443-.131.155-.281.334-.397.465-.131.154-.27.322-.119.582.152.261.677 1.118 1.455 1.81.107.095.836.816 1.766 1.196.262.108.416.088.572-.089.155-.176.666-.777.842-1.042.176-.265.352-.22.593-.132.242.088 1.53.722 1.795.855.264.133.44.199.505.31.066.111.066.643-.153 1.262z" />
+                            </svg>
+                            <a href="https://wa.me/5592986347979" target="_blank"
+                                class="hover:text-white transition-colors">(92) 98634-7979</a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 mr-2 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>R. Vitória Régia, 130 - Centro, Itamarati - AM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Horário -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Horário de Funcionamento</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>Seg a Sex: <span class="text-white">7h às 11h30 e 13h às 18h30</span></li>
+                        <li>Domingos: <span class="text-white">7h às 11h e 13h às 17h</span></li>
+                        <li>Sábados: <span class="text-gray-500">Fechado</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2024 Fibranet. Todos os direitos reservados.</p>
+                <p class="mt-4 md:mt-0">Desenvolvido por <span class="text-white font-semibold">OFS Digital</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5592986347979" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-50 bg-brand-500 text-black text-black p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+        aria-label="Falar no WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M12.01 2.011A10 10 0 0 0 2 12.012c0 1.777.466 3.498 1.348 5.01L2 22l5.127-1.34A9.957 9.957 0 0 0 12.01 22a10 10 0 0 0 0-19.989zM17.15 15.65c-.219.619-1.282 1.201-1.782 1.246-.437.04-1.002.133-3.238-.795-2.697-1.121-4.42-3.861-4.553-4.04-.132-.178-1.086-1.446-1.086-2.76 0-1.312.684-1.956.927-2.223.242-.266.527-.333.704-.333.176 0 .351-.004.505.004.162.007.38-.063.593.454.223.539.734 1.796.8 1.93.065.132.11.287.022.464-.088.177-.132.288-.264.443-.131.155-.281.334-.397.465-.131.154-.27.322-.119.582.152.261.677 1.118 1.455 1.81.107.095.836.816 1.766 1.196.262.108.416.088.572-.089.155-.176.666-.777.842-1.042.176-.265.352-.22.593-.132.242.088 1.53.722 1.795.855.264.133.44.199.505.31.066.111.066.643-.153 1.262z" />
+        </svg>
+        <span
+            class="absolute right-full mr-4 bg-[#0f0f0f] text-gray-800 text-sm font-bold px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Como podemos ajudar?
+        </span>
+    </a>
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fibranet.fun/sitemap.xml
